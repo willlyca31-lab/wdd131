@@ -40,6 +40,11 @@ nav a {
     display: block;
 }
 
+nav a:hover {
+    background-color: #444;
+    color: #ffd700;
+}
+
 main {
     max-width: 1100px;
     margin: auto;
