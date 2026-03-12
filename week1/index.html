@@ -18,14 +18,14 @@
 
 <body>
      <header>
-         <h2>WDD 131 – Dynamic Web Fundamentals</h2>
+         <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
      </header>
 
      <nav>
          <ul class="navigation">
+             <li><a href="https://www.linkedin.com/in/wilson-cardichon-893078134/">Linkedin</a></li> 
+             <li><a href="https://byupw.instructure.com/profile/">I-Learn</a></li>          
              <li><a href="https://www.churchofjesuschrist.org/study/scriptures/ot/ps/119?lang=eng/">Scripture</a></li>
-             <li><a href="https://www.linkedin.com/in/wilson-cardichon-893078134/">Linkedin</a></li>
-             <li><a href="https://byupw.instructure.com/profile/">I-Learn</a></li>
              <li><a href="#">Final Project</a></li>
         </ul>
      </nav>
@@ -42,12 +42,16 @@
             
              <h4> Port au Prince , Haiti</h4>
              <div class="country">
-                 <img src="images/haitian-flag.jpg" alt="A flag of Haiti">
+                 <figure>
+                     <img src="images/haitian-flag.jpg" alt="A flag of Haiti">
+                     <figcaption>Official flag of Haiti</figcaption>
+                 </figure>
+
                  <p> Haiti is a vibrant Caribbean nation with a rich culture, a strong sense of community, and a resilient spirit. From the mountains to the coast, it’s a country full of life, history, and hope — but also facing serious challenges.</p>
              </div>
          </section>
 
-         <section class="card"> 
+         <section class="Card"> 
              <h3>web dev resources</h3>
              <div class="dev-resources"></div>
                 <ul>
@@ -63,12 +67,10 @@
      </main>
 
      <footer>
-         <p> ©2025👍 Wilson Cardichon 👍 Port-au-Prince </p>
+         <p> 
+            © <span id="currentyear"></span>👍 Wilson Cardichon 👍 Port-au-Prince </p>
               <p id="lastModified"> </p>
      </footer>
-         <script>
-             document.getElementById("lastModified").textContent="Last Modification: "+document.lastModified;
-         </script>
 </body>
 
 </html>
