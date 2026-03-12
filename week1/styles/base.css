@@ -6,8 +6,14 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #e6e6e6;
+}
+
+#course-title {
+    font-family: 'Lilita One', cursive;
+    display: block;
+    text-align: center;
 }
 
 header {
