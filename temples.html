@@ -5,16 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title> Temple Albums </title>
+    <title>Temple Albums</title>
 
-    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Wilson Cardichon W02 Assignment: Picture Album. ">
+    <meta name="description" content="Picture Album Assignment. ">
     <meta name="author" content="Wilson Cardichon">
 
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;&display=swap" rel="stylesheet">
 
@@ -24,23 +21,23 @@
 <body>
 
      <header>
-             <h2 class="logo">Temple Album</h2>
-             <button id="menu"></button>
+         <h2>Temple Album</h2>
+         <button id="menu"></button>
 
-             <nav>
-                 <ul class="navigation">
-                     <li><a href="#">Home</a></li> 
-                     <li><a href="#">Old</a></li>          
-                     <li><a href="#">New</a></li>
-                     <li><a href="#">Large</a></li>
-                     <li><a href="#">Small</a></li>
-                 </ul>
-             </nav>
+          <nav>
+             <ul class="navigation">
+                 <li><a href="#">Home</a></li> 
+                 <li><a href="#">Old</a></li>          
+                 <li><a href="#">New</a></li>
+                 <li><a href="#">Large</a></li>
+                 <li><a href="#">Small</a></li>
+             </ul>
+          </nav>
      </header>
      
      <main>
          <h1>Home</h1>
-             <section class="gallery">
+             <div class="gallery">
                  <figure>
                      <img src="images/monterrey-mexico-temple.jpg" alt="Monterrey Mexico Temple">
                      <figcaption>Monterrey Mexico Temple Photo</figcaption>
@@ -85,13 +82,13 @@
                      <img src="images/monterrey-mexico-temple.jpg" alt="Monterrey Mexico Temple">
                      <figcaption>Monterrey Mexico Temple Photo</figcaption>
                  </figure>
-             </section>
+             </div>
      </main>
 
      <footer>
          <p> 
           © <span id="currentyear"></span>👍 Wilson Cardichon 👍 Port-au-Prince </p>
-          <p id="lastModified"> </p>
+          <p id="lastModified"></p>
      </footer>
 
 </body>
