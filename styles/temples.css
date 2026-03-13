@@ -42,6 +42,10 @@ header {
     content: "☰";
 }
 
+.open {
+    display: block;
+}
+
 .navigation {
     list-style: none;
     display: none;
