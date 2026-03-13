@@ -1,3 +1,9 @@
+:root {
+    --primary-color:#1f4e6b;
+    --secondary-color:#333;
+    --accent-color: #ffd700;
+    --background-color:#e6e6e6;
+}
 
 * {
     margin: 0;
@@ -67,13 +73,14 @@ h1 {
     background: white;
     border-radius: 8px;
     border: 1px solid #bbb;
+    padding: 15px;
 }
 
 .card h3 {
     background-color: #1f4e6b;
     color: white;
     padding: 10px;
-    margin: -15px -15px 15px;
+    margin: -10px -10px 15px -10px;
     margin-top: 10px;
     text-align: center;
 }
