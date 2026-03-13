@@ -46,6 +46,11 @@ header {
     content:"X";
 }
 
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
 .navigation {
     list-style: none;
     display: none;
