@@ -30,7 +30,7 @@ header {
 
 #menu {
     font-size: 2rem;
-    border: 0;
+    border: none;
     background: none;
     color: white;
     position: absolute;
