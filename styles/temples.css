@@ -28,9 +28,27 @@ header {
     font-size: 1.4rem;
 }
 
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+#menu::before {
+    content: "☰";
+}
+
 .navigation {
     list-style: none;
     display: none;
+}
+
+.navigation.open {
+    display: block;
 }
 
 main {
