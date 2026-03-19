@@ -43,9 +43,13 @@ body {
 
 .weather-icon {
     width: 80px;
-    margin: 10px auto;
-    display: block;
+    margin: 10px 0;
 }
+
+#weather-title::after {
+    content:"⛅";
+}
+
 
 .section {
     padding: 10px;
