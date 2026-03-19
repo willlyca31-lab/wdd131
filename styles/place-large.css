@@ -1,7 +1,15 @@
-@media (min-width:900px) {
+@media (min-width:768px) {
 
     .card {
         width: 400px;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    #weather-title::after {
+        content: "";
     }
 
 }
