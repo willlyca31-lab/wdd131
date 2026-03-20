@@ -5,7 +5,7 @@
     }
 
     .weather-icon {
-        display: none;
+        display: flex;
     }
 
     #weather-title::after {

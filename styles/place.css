@@ -47,6 +47,12 @@ body {
     display: block;
 }
 
+
+#weather-title::after {
+    content:"⛅";
+}
+
+
 .section {
     padding: 10px;
     text-align: center;
@@ -61,12 +67,11 @@ footer {
     padding: 15px;
     background: var(--primary-color);
     color: white;
-    text-align: center;
+    align-items: center;
 }
 
 #lastModified {
     color: yellow;
     display: block;
-    font-size: 0.8rem;
-    text-align: center;
+    align-items: center;
 }
