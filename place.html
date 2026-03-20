@@ -22,42 +22,47 @@
 </head>
 
 <body>
-<main>
-<div class="card">           
-        <div class="header">Cap-Haitian | Citadel Laferrière</div>
+    <div class="page">
 
-        <figure class="image">
-              <img src="images/citadelle.webp" alt="Citadel Laferrière pic">
-              <figcaption>Citadel Laferrière picture</figcaption>
-        </figure>
+        <header>
+         <h1>Cap-Haitian | Citadel Laferrière </h1>
+        </header>
 
-    <div class="section data">
-        <h3>Data</h3>
-        <p><strong>Area:</strong> ~28 km²</p>
-        <p><strong>Population:</strong> ~190,000</p>
-        <p><strong>country:</strong> Haiti</p>
-        <p><strong>Languages:</strong> Creole,French</p>
-        <p><strong>Currency:</strong> Gourde (HTG)</p>
-        <p><strong>Time Zone:</strong> UTC -5</p>
-        <p><strong>calling code:</strong> +509</p>
-        <p><strong>Internet TLD:</strong> .ht</p>
+        <main>
+            <div class="card">  
+                <figure class="image">
+                    <img src="images/citadelle.webp" alt="Citadel Laferrière pic">
+                    <figcaption>Citadel Laferrière picture</figcaption>
+                </figure>
+
+                <div class="section data">
+                    <h3>Data</h3>
+                    <p><strong>Area:</strong> ~28 km²</p>
+                    <p><strong>Population:</strong> ~190,000</p>
+                    <p><strong>country:</strong> Haiti</p>
+                    <p><strong>Languages:</strong> Creole,French</p>
+                    <p><strong>Currency:</strong> Gourde (HTG)</p>
+                    <p><strong>Time Zone:</strong> UTC -5</p>
+                    <p><strong>calling code:</strong> +509</p>
+                    <p><strong>Internet TLD:</strong> .ht</p>
+                </div>
+
+                <div class="section weather">
+                    <h3 id="weather-title">Weather</h3>
+                    <img src="images/weather.svg" alt="cloudy weather icon" class="weather-icon">
+                    <p><strong>Temperature:</strong> <span id="temp">28</span> °C</p>
+                    <p><strong>conditions:</strong> Sunny</p>
+                    <p><strong>Wind:</strong> <span id="wind">15</span> Km/h</p>
+                    <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+                </div>
+
+                <footer>
+                    <p>© <span id="currentyear"></span> 👍 Wilson Cardichon 👍 Cap-Haitian</p>
+                    <p id="lastModified"></p>
+                </footer>
+            </div>
+        </main>
     </div>
-
-    <div class="section weather">
-        <h3 id="weather-title">Weather</h3>
-        <img src="images/weather.svg" alt="cloudy weather icon" class="weather-icon">
-        <p><strong>Temperature:</strong> <span id="temp">28</span> °C</p>
-        <p><strong>conditions:</strong> Sunny</p>
-        <p><strong>Wind:</strong> <span id="wind">15</span> Km/h</p>
-        <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
-    </div>
-
-    <footer>
-        <p>© <span id="currentyear"></span> 👍 Wilson Cardichon 👍 Cap-Haitian</p>
-        <p id="lastModified"></p>
-    </footer>
-</div>
-</main>
 
 </body>
 </html>

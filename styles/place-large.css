@@ -1,4 +1,11 @@
 @media (min-width:768px) {
+        .page {
+        max-width: 400px;
+    }
+
+    .section {
+        text-align: flex;
+    }
 
     .card {
         width: 400px;
