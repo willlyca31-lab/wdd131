@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+}
+
+header {
+    background: #4b006a;
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.logo {
+    font-size: 1.4rem;
+}
+
+#menu {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content:"X";
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background: #6a1b9a;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+figure {
+    background: #eee;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-size: .9rem;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 1rem;
+    background: #4b006e;
+    color: white;
+}
+
+#lastModified {
+    color: yellow;
+}
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temple Albums</title>
+
+    <meta name="description" content="Temple Album page for WDD 131 showing a gallery of temple images including the Monterrey Mexico Temple.">
+    <meta name="author" content="Wilson Cardichon">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+
+     <header>
+         <h2>Temple Album</h2>
+         <button id="menu"></button>
+
+          <nav>
+             <ul class="navigation">
+                 <li><a href="#">Home</a></li> 
+                 <li><a href="#">Old</a></li>          
+                 <li><a href="#">New</a></li>
+                 <li><a href="#">Large</a></li>
+                 <li><a href="#">Small</a></li>
+             </ul>
+          </nav>
+     </header>
+     
+     <main>
+         <h1>Home</h1>
+         <div class="res-grid"></div>
+         <section id="temple-cards"></section>
+     </main>
+
+     <footer>
+         <p> 
+          © <span id="currentyear"></span>👍 Wilson Cardichon 👍 Port-au-Prince </p>
+          <p id="lastModified"></p>
+     </footer>
+
+</body>
+</html>
+
