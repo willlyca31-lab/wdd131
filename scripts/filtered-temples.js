@@ -93,19 +93,19 @@ function displayTemples(templeList) {
         const card = document.createElement("article");
 
         const name = document.createElement("h3");
-        name.textContent = temple.templeName;
+        name.textContent = "Name:" + temple.templeName;
         card.appendChild(name);
 
         const location = document.createElement("p");
-        location.textContent = temple.location;
+        location.textContent = "Location:"+temple.location;
         card.appendChild(location);
 
         const dedicated = document.createElement("p");
-        dedicated.textContent = "Dedicated: " + temple.dedicated;
+        dedicated.textContent = "Dedication date:" + temple.dedicated;
         card.appendChild(dedicated);
 
         const area = document.createElement("p");
-        area.textContent = "Area: " + temple.area + " sq ft";
+        area.textContent = "sq ft area: " + temple.area + " sq ft";
         card.appendChild(area);
 
         const img = document.createElement("img");

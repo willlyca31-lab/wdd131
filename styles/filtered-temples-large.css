@@ -1,4 +1,6 @@
-@media (min-width:768px) {url(temples-large.css)
+@media (min-width:768px) {
+    
+    @import url(filtered-temples-large.css);
 
 #menu {
     display: none;
