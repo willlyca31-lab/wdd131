@@ -65,7 +65,7 @@ const temples = [
     "https://churchofjesuschristtemples.org/assets/img/temples/monterrey-mexico-temple/monterrey-mexico-temple-26392.jpg"
   },
   {
-  templeName: "APort-au-Prince Haiti Temple",
+  templeName: "Port-au-Prince Haiti Temple",
     location: "HT Petion-Ville",
     dedicated: "2019, August , 2019",
     area: 966,
@@ -86,37 +86,36 @@ const templeContainer = document.querySelector("#temple-cards");
 
 function displayTemples(templeList) {
     templeContainer.innerHTML = "";
+       for (let i = 0; i < templeList.length; i++) {
+           const temple = templeList[i];
 
-    for (let i = 0; i < templeList.length; i++) {
-        const temple = templeList[i];
+           const card = document.createElement("article");
 
-        const card = document.createElement("article");
+           const name = document.createElement("h3");
+           name.textContent = "" + temple.templeName;
+           card.appendChild(name);
 
-        const name = document.createElement("h3");
-        name.textContent = "Name:" + temple.templeName;
-        card.appendChild(name);
+           const location = document.createElement("p");
+           location.textContent = "Location:"+temple.location;
+           card.appendChild(location);
 
-        const location = document.createElement("p");
-        location.textContent = "Location:"+temple.location;
-        card.appendChild(location);
+           const dedicated = document.createElement("p");
+           dedicated.textContent = "Dedication date:" + temple.dedicated;
+           card.appendChild(dedicated);
 
-        const dedicated = document.createElement("p");
-        dedicated.textContent = "Dedication date:" + temple.dedicated;
-        card.appendChild(dedicated);
+           const area = document.createElement("p");
+           area.textContent = "sq ft area: " + temple.area + " sq ft";
+           card.appendChild(area);
 
-        const area = document.createElement("p");
-        area.textContent = "sq ft area: " + temple.area + " sq ft";
-        card.appendChild(area);
-
-        const img = document.createElement("img");
-        img.src = temple.imageUrl;
-        img.alt = temple.templeName;
-        img.loading = "lazy"; 
+           const img = document.createElement("img");
+           img.src = temple.imageUrl;
+           img.alt = temple.templeName;
+           img.loading = "lazy"; 
         
-        card.appendChild(img);
+           card.appendChild(img);
 
-        templeContainer.appendChild(card);
-    }
+           templeContainer.appendChild(card);
+         }
 }
 
 
@@ -124,38 +123,45 @@ function filterTemples(filter) {
     const filtered = [];
 
     for (let i = 0; i < temples.length; i++) {
-        const temple = temples[i];
-        const year = parseInt(temple.dedicated.split(",")[0]);
+          const temple = temples[i];
+          const year = parseInt(temple.dedicated.split(",")[0]);
 
-        if (filter === "Old" && year < 1900) {
-            filtered.push(temple);
-        } else if (filter === "New" && year > 2000) {
-            filtered.push(temple);
-        } else if (filter === "Large" && temple.area > 90000) {
-            filtered.push(temple);
-        } else if (filter === "Small" && temple.area < 10000) {
-            filtered.push(temple);
-        } else if (filter === "Home") {
-            filtered.push(temple);
-        }
+            if (filter === "Old" && year < 1900) {
+                 filtered.push(temple);
+            } else if (filter === "New" && year > 2000) {
+                 filtered.push(temple);
+            } else if (filter === "Large" && temple.area > 90000) {
+                 filtered.push(temple);
+            } else if (filter === "Small" && temple.area < 10000) {
+                 filtered.push(temple);
+            } else if (filter === "Home") {
+                 filtered.push(temple);
+           }
     }
-
     displayTemples(filtered);
+  }
+
+const navItems = document.querySelectorAll(".navigation a");
+for (let i= 0; i < navItems.length; i++) {
+     navItems[i].addEventListener("click",function() {
+         const filter = this.textContent;
+         filterTemples(filter);
+     });
 }
 
 const menuButton = document.querySelector("#menu");
-const navigation = document.querySelector(".navigation");
+const nav = document.querySelector(".navigation");
 
 menuButton.addEventListener("click", () => {
-    navigation.classList.toggle("open");
+    nav.classList.toggle("open");
     menuButton.classList.toggle("open");
 });
 
 const year = new Date().getFullYear();
- document.getElementById("currentyear").textContent = year;
- document.getElementById("lastModified").textContent = 
- "Last Modification: "+document.lastModified;
+    document.getElementById("currentyear").textContent = year;
+    document.getElementById("lastModified").textContent = 
+    "Last Modification: "+document.lastModified;
 
- displayTemples(temples)
+ displayTemples(temples);
 
  

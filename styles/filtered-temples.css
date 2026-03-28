@@ -36,10 +36,13 @@ header {
     position: absolute;
     right: 20px;
     top: 10px;
+    width: 40px;
+    height: 40px;
 }
 
 #menu::before {
     content: "☰";
+    display: inline-block;
 }
 
 #menu.open::before {
@@ -82,7 +85,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-.gallery {
+.res-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
