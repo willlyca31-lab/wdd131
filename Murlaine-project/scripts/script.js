@@ -1,31 +1,39 @@
-const menu = document.getElementById("menu");
-const nav = document.getElementById("nav");
+document.addEventListener("DOMContentLoaded", function () {
 
-if (menu) {
-    menu.addEventListener("click", () => {
-        nav.classList.toggle("open");
-    });
-}
+    const menu = document.getElementById("menu");
+    const nav = document.getElementById("nav");
 
-// Form UX
-const form = document.getElementById("form");
+    if (menu && nav) {
+        menu.addEventListener("click", () => {
+            nav.classList.toggle("open");
+        });
+    }
 
-if (form) {
-    form.addEventListener("submit", function(e) {
-        e.preventDefault();
+    const form = document.getElementById("form");
 
-        const name = document.getElementById("name").value;
+    if (form) {
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
 
-        localStorage.setItem("clientName", name);
+            const name = document.getElementById("name").value;
 
-        alert("Thank you " + name + "! We will contact you soon.");
-    });
-}
+            localStorage.setItem("clientName", name);
 
-// FOOTER DATE
-const year = new Date().getFullYear();
-document.getElementById("currentyear").textContent = year;
+            alert("Thank you " + name + "! We will contact you soon.");
+        });
+    }
 
-document.getElementById("lastModified").textContent =
-    "Last Modification: " + document.lastModified;
+    // FOOTER
+    const year = new Date().getFullYear();
+    const yearEl = document.getElementById("currentyear");
+    const modEl = document.getElementById("lastModified");
 
+    if (yearEl) {
+        yearEl.textContent = year;
+    }
+
+    if (modEl) {
+        modEl.textContent = "Last Modification: " + document.lastModified;
+    }
+
+});
