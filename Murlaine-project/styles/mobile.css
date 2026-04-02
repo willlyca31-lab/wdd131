@@ -1,0 +1,25 @@
+@media (max-width: 768px) {
+
+nav {
+    display: none;
+    flex-direction: column;
+}
+
+nav.open {
+    display: flex;
+}
+
+.cards {
+    flex-direction: column;
+}
+
+.hero {
+    height: auto;
+    padding: 40px;
+}
+}
+
+.site-footer {
+    padding: 15px;
+    font-size: 13px;
+}
