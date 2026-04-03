@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    honst form = document.getElementById("form");
+    const form = document.getElementById("form");
 
     if (form) {
         form.addEventListener("submit", function(e) {
