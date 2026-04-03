@@ -37,6 +37,14 @@ nav a {
     text-align: center;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+#explore {
+    padding-top: 100px;
+}
+
 .dark {
     background: #E5E7EB;
 }
