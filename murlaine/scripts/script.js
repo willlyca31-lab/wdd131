@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const nav = document.getElementById("nav");
 
     if (menu && nav) {
-        menu.addEventListener("click", () => {
-            nav.classList.toggle("open");
-        });
+         menu.addEventListener("click", () => {
+             nav.classList.toggle("open");
+         });
     }
 
     const form = document.getElementById("form");
