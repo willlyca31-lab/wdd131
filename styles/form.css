@@ -70,6 +70,10 @@ fieldset label {
         padding: 1rem;
     }
 
+    body {
+        background: red;
+    }
+
     input, select, textarea {
         font-size: 1rem;
     }
