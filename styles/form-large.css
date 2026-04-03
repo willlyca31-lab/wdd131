@@ -1,0 +1,12 @@
+body, html {
+    font-size: 16px;
+}
+
+main {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+input, select, textarea {
+    font-size: 1rem;
+}
