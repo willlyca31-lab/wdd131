@@ -31,3 +31,11 @@ nav.open {
     padding: 15px;
     font-size: 13px;
 }
+
+.site-footer a {
+    color: #FBBF24 !important;
+}
+
+.site-footer a:visited {
+    color: #FBBF24 !important;
+}
