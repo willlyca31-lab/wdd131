@@ -97,6 +97,15 @@ nav a {
     font-size: 14px;
 }
 
+.site-footer a,
+.site-footer a:link,
+.site-footer a:visited,
+.site-footer a:active,
+.site-footer a:hover {
+    color: #FBBF24 !important;
+    text-decoration: none;
+}
+
 #lastModified {
     font-size: 12px;
     opacity: 0.8;
