@@ -70,6 +70,20 @@ nav a {
 }
 
 /* FOOTER */
+.site-footer a {
+    color: #FBBF24; /* yellow */
+    text-decoration: none;
+}
+
+.site-footer a:visited {
+    color: #FBBF24; /* keeps it yellow after click */
+}
+
+.site-footer a:hover {
+    color: #FFD700; /* lighter yellow on hover (optional) */
+    text-decoration: underline;
+}
+
 .site-footer {
     background: #1E3A8A;
     color: white;
