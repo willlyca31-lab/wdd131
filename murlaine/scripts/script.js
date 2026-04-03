@@ -1,31 +1,33 @@
+// ✅ GLOBAL FUNCTION
+function setLanguage(lang) {
+    const elements = document.querySelectorAll("[data-en]");
+
+    elements.forEach(el => {
+        const text = el.getAttribute(`data-${lang}`);
+        if (text) el.textContent = text;
+    });
+
+    localStorage.setItem("language", lang);
+}
+
+// ✅ MAIN SCRIPT
 document.addEventListener("DOMContentLoaded", function () {
 
+    // Load saved language
+    const savedLang = localStorage.getItem("language") || "en";
+    setLanguage(savedLang);
+
+    // MENU
     const menu = document.getElementById("menu");
     const nav = document.getElementById("nav");
 
     if (menu && nav) {
-         menu.addEventListener("click", () => {
-             nav.classList.toggle("open");
-         });
+        menu.addEventListener("click", () => {
+            nav.classList.toggle("open");
+        });
     }
 
-    function setLanguage(lang) {
-    const elements = document.querySelectorAll("[data-en]");
-
-    elements.forEach(el => {
-        el.textContent = el.getAttribute(`data-${lang}`);
-    });
-
-    // Save user preference
-    localStorage.setItem("language", lang);
-}
-
-// Load saved language on page load
-document.addEventListener("DOMContentLoaded", () => {
-    const savedLang = localStorage.getItem("language") || "en";
-    setLanguage(savedLang);
-});
-
+    // FORM
     const form = document.getElementById("form");
 
     if (form) {
@@ -33,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
             e.preventDefault();
 
             const name = document.getElementById("name").value;
-
             localStorage.setItem("clientName", name);
 
             alert("Thank you " + name + "! We will contact you soon.");
@@ -41,12 +42,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // FOOTER
-    const year = new Date().getFullYear();
     const yearEl = document.getElementById("currentyear");
     const modEl = document.getElementById("lastModified");
 
     if (yearEl) {
-        yearEl.textContent = year;
+        yearEl.textContent = new Date().getFullYear();
     }
 
     if (modEl) {
