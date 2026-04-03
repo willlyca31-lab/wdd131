@@ -1,4 +1,4 @@
-// Product Array
+
 const products = [
   { id: "fc-1888", name: "flux capacitor", averagerating: 4.5 },
   { id: "fc-2050", name: "power laces", averagerating: 4.7 },
@@ -7,7 +7,6 @@ const products = [
   { id: "jj-1969", name: "warp equalizer", averagerating: 5.0 }
 ];
 
-// Populate Product Select
 const productSelect = document.getElementById("product");
 products.forEach(product => {
     const option = document.createElement("option");
@@ -15,3 +14,9 @@ products.forEach(product => {
     option.textContent = product.name;
     productSelect.appendChild(option);
 });
+
+document.getElementById('currentyear').textContent = new Date().getFullYear();
+
+document.getElementById('lastModified').textContent = 
+    "Last Modified: " + document.lastModified;
+
