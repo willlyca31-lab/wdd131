@@ -1,5 +1,13 @@
 @media (max-width: 768px) {
 
+#menu {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+}
+
 nav {
     display: none;
     flex-direction: column;
