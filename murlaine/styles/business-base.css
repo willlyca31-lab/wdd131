@@ -16,6 +16,14 @@ header {
     color: #FBBF24;
 }
 
+.language-switch button {
+    background: none;
+    border: none;
+    color: #FBBF24;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
 nav a {
     color: white;
     margin: 10px;
