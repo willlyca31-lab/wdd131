@@ -9,6 +9,23 @@ document.addEventListener("DOMContentLoaded", function () {
          });
     }
 
+    function setLanguage(lang) {
+    const elements = document.querySelectorAll("[data-en]");
+
+    elements.forEach(el => {
+        el.textContent = el.getAttribute(`data-${lang}`);
+    });
+
+    // Save user preference
+    localStorage.setItem("language", lang);
+}
+
+// Load saved language on page load
+document.addEventListener("DOMContentLoaded", () => {
+    const savedLang = localStorage.getItem("language") || "en";
+    setLanguage(savedLang);
+});
+
     const form = document.getElementById("form");
 
     if (form) {
