@@ -7,7 +7,7 @@ body {
 
 header {
     display: flex;
-    ustify-content: space-between;
+    justify-content: space-between;
     padding: 20px;
     background: #1E3A8A;
 }
