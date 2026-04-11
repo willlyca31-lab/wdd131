@@ -2,20 +2,24 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     background-color: #f4f4f4;
+    line-height: 1.6;
 }
 
+/* Headings */
 h1, h2 {
     font-family: 'Poppins', sans-serif;
     color: #2A9D8F;
 }
 
+/* Header */
 header {
     background: #264653;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
+/* Navigation */
 nav {
     background: #2A9D8F;
 }
@@ -27,41 +31,39 @@ nav ul {
 }
 
 nav ul li {
-    padding: 10px;
+    padding: 12px;
+    text-align: center;
 }
 
-nav a {
+nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
-main {
-    padding: 20px;
+/* Hover effect (important for design rubric) */
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-.color-box {
-    padding: 10px;
-    margin: 10px 0;
+/* Sections */
+section {
+    padding: 1.5rem;
+    margin: 1rem;
+    background: white;
+    border-radius: 8px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    border: none;
+    background: #2A9D8F;
     color: white;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.primary {
-    background-color: #2A9D8F;
-}
-
-.secondary {
-    background-color: #264653;
-}
-
-.wireframe {
-    border: 2px dashed #333;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background: #264653;
-    color: white;
+button:hover {
+    background: #21867a;
 }
