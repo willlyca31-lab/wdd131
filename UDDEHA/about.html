@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About</title>
+<link rel="stylesheet" href="styles/business-base.css">
+<link rel="stylesheet" href="styles/business-layout.css">
+<script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="language-switch">
+         <button onclick="setLanguage('en')">EN</button>
+         <button onclick="setLanguage('es')">ES</button>
+         <button onclick="setLanguage('fr')">FR</button>
+    </div>
+    <h1 class="logo">Murlaine</h1>
+    <button id="menu">☰</button>
+    <nav id="nav">
+        <a href="index.html"
+        data-en="Home"
+        data-es="Inicio"
+        data-fr="Accueil">Home</a>
+
+        <a href="about.html"
+        data-en="About"
+        data-es="Acerca"
+        data-fr="À propos">About</a>
+
+        <a href="business.html"
+        data-en="Businesses"
+        data-es="Negocios"
+        data-fr="Entreprises">Businesses</a>
+
+        <a href="contact.html"
+        data-en="Contact"
+        data-es="Contacto"
+        data-fr="Contact">Contact</a>
+    </nav>
+</header>
+
+<section class="section">
+<h2 
+data-en="About Murlaine"
+data-es="Sobre Murlaine"
+data-fr="À propos de Murlaine">
+About Murlaine
+</h2>
+
+<p 
+data-en="Murlaine Cardichon is a successful entrepreneur in Canada working with Amway and promoting Haitian products globally."
+data-es="Murlaine Cardichon es una emprendedora exitosa en Canadá que trabaja con Amway y promueve productos haitianos a nivel global."
+data-fr="Murlaine Cardichon est une entrepreneure prospère au Canada travaillant avec Amway et promouvant des produits haïtiens à l'échelle mondiale.">
+Murlaine Cardichon is a successful entrepreneur in Canada working with Amway and promoting Haitian products globally.
+</p>
+
+<p 
+data-en="She leads and empowers a strong Haitian community through leadership and economic growth."
+data-es="Ella lidera y fortalece una comunidad haitiana sólida a través del liderazgo y el crecimiento económico."
+data-fr="Elle dirige et renforce une communauté haïtienne forte grâce au leadership et à la croissance économique.">
+She leads and empowers a strong Haitian community through leadership and economic growth.
+</p>
+
+</section>
+
+<footer class="site-footer">
+    <p>
+        © <span id="currentyear"></span> Wilson Cardichon | Business Developer
+    </p>
+
+    <p>
+        📱 <a href="https://wa.me/524461048399" target="_blank">
+        Contact me on WhatsApp
+        </a>
+    </p>
+
+     <p>
+        📧 <a href="mailto:willyca37@gmail.com">
+        willyca37@gmail.com
+        </a>
+    </p>
+
+    <p id="lastModified"></p>
+</footer>
+
+
+</body>
+</html>
