@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #F9FAFB;
+    color: #111827;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #1E3A8A;
+}
+
+.logo {
+    color: #FBBF24;
+}
+
+.language-switch button {
+    background: none;
+    border: none;
+    color: #FBBF24;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #1E3A8A, #3B82F6);
+    color: white;
+}
+
+.section {
+    padding: 50px;
+    text-align: center;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.dark {
+    background: #E5E7EB;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    flex: 1;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.cta {
+    background: #FBBF24;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+.cta-outline {
+    border: 2px solid #1E3A8A;
+    padding: 10px 20px;
+    color: #1E3A8A;
+    text-decoration: none;
+}
+
+/* FOOTER */
+.site-footer a {
+    color: #FBBF24; /* yellow */
+    text-decoration: none;
+}
+
+.site-footer a:visited {
+    color: #FBBF24; /* keeps it yellow after click */
+}
+
+.site-footer a:hover {
+    color: #FFD700; /* lighter yellow on hover (optional) */
+    text-decoration: underline;
+}
+
+.site-footer {
+    background: #1E3A8A;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.site-footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.site-footer a,
+.site-footer a:link,
+.site-footer a:visited,
+.site-footer a:active,
+.site-footer a:hover {
+    color: #FBBF24 !important;
+    text-decoration: none;
+}
+
+#lastModified {
+    font-size: 12px;
+    opacity: 0.8;
+}

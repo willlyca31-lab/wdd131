@@ -1,0 +1,42 @@
+@media (max-width: 768px) {
+
+#menu {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+}
+
+nav.open {
+    display: flex;
+}
+
+.cards {
+    flex-direction: column;
+}
+
+.hero {
+    height: auto;
+    padding: 40px;
+}
+
+.site-footer a,
+.site-footer a:visited {
+    color: #FBBF24;
+}
+
+}
+
+.site-footer {
+    padding: 15px;
+    font-size: 13px;
+}
+
+
+
